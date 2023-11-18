@@ -1,5 +1,42 @@
 body {
   margin: auto;
-  max-width: 100ch;
+  max-width: 140ch;
   padding: 1ch 2ch;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-style: dashed;
+}
+
+table th, table td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.projects-card-container{
+  display: flex;
+  
+
+}
+.tables-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1px
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-card div {
+  margin-bottom: 8px;
 }
