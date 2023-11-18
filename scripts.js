@@ -47,21 +47,25 @@ function populatePersonalProjectsCards() {
 
 				// Create rows for title, description, tech, and repo link
 				const titleRow = document.createElement("div");
-				titleRow.textContent = `Title: ${project.title}`;
+				titleRow.textContent = `${project.title}`;
+				titleRow.className = "project-card-title";
 				card.appendChild(titleRow);
 
 				const descriptionRow = document.createElement("div");
-				descriptionRow.textContent = `Description: ${project.description}`;
+				descriptionRow.textContent = `${project.description}`;
+				descriptionRow.className = "project-card-description";
 				card.appendChild(descriptionRow);
 
 				const techRow = document.createElement("div");
-				techRow.textContent = `Tech: ${project.tech.join(", ")}`;
+				techRow.textContent = `${project.tech.join(", ")}`;
+				techRow.className = "project-card-tech";
 				card.appendChild(techRow);
 
 				const repoRow = document.createElement("div");
 				const repoLink = document.createElement("a");
 				repoLink.href = project.repo;
 				repoLink.textContent = "Repository Link";
+				repoRow.className = "project-card-link";
 				repoRow.appendChild(repoLink);
 				card.appendChild(repoRow);
 
