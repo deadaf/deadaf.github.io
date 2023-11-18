@@ -1,0 +1,109 @@
+{
+    "experience": {
+        "1": {
+            "name": "Quotient",
+            "designations": [
+                "Founder",
+                "Maintainer"
+            ],
+            "short-description": "Helps Esports orgs to manage and organize scrims, tournaments of diﬀerent mobile/PC titles.",
+            "detailed-contribution": [
+                "Designed, built & scaled the product & web-dashboard from scratch using technologies such as discord.py, React, FastAPI, PostgreSQL, websockets, Tortoise-ORM & more.",
+                "Integrated Discord Oauth2 for user login on web dashboard using FastAPI, JWT & PostgreSQL.",
+                "Increased transaction rate and profits by 50% each month by integrating PayuMoney Payment Gateway with FastAPI.",
+                "Optimized the web dashboard's speed by replacing HTTP requests with websockets using Socket.io.",
+                "Built an OCR and Image hashing microservice using Pytesseract, FastAPI, Imagehash, PIL, and other technologies, currently undergoing a rewrite in Golang (handles 100k + hits/month)"
+            ],
+            "links": {
+                "Bot (Github)": "https://github.com/quotientbot/Quotient-Bot",
+                "OCR service (Github)": "https://github.com/quotientbot/ocr",
+                "Dashboard (Live)": "https://quotientbot.xyz/",
+                "Dashboard (Github)": "https://github.com/quotientbot/backend"
+            },
+            "tech": [
+                "Python",
+                "PostgreSQL",
+                "Javascript",
+                "Go",
+                "FastAPI",
+                "React",
+                "Tailwind CSS",
+                "Websockets"
+            ],
+            "timeline": {
+                "from": "Sept 2020",
+                "to": "Present"
+            }
+        },
+        "2": {
+            "name": "Palco Labs",
+            "designations": [
+                "Software Engineer (Part-Time)"
+            ],
+            "short-description": "An agency that builds profitable online communities for SaaS services and B2C companies.",
+            "detailed-contribution": [
+                "Designed, built & scaled the product & web-dashboard from scratch using technologies such as discord.py, React, FastAPI, PostgreSQL, websockets, Tortoise-ORM & more.",
+                "Integrated Discord Oauth2 for user login on web dashboard using FastAPI, JWT & PostgreSQL.",
+                "Increased transaction rate and profits by 50% each month by integrating PayuMoney Payment Gateway with FastAPI.",
+                "Optimized the web dashboard's speed by replacing HTTP requests with websockets using Socket.io.",
+                "Built an OCR and Image hashing microservice using Pytesseract, FastAPI, Imagehash, PIL, and other technologies, currently undergoing a rewrite in Golang (handles 100k + hits/month)"
+            ],
+            "links": {
+                "Company (linkedIn)": "https://www.linkedin.com/company/palcolabs/"
+            },
+            "tech": [
+                "Go",
+                "Python",
+                "PostgreSQL",
+                "CI/CD",
+                "Docker",
+                "React",
+                "Tailwind CSS"
+            ],
+            "timeline": {
+                "from": "July 2023",
+                "to": "Present"
+            }
+        }
+    },
+    "projects": {
+        "1": {
+            "title": "eVault (SIH 2023)",
+            "description": "A blockchain-based system to provide a secure, transparent, and accessible solution for the storage, management, and sharing of legal records.",
+            "tech": [
+                "Python",
+                "FastAPI",
+                "Docker",
+                "Solidity",
+                "Web3 Smart Contracts",
+                "Truffle",
+                "Javascript",
+                "React",
+                "Tailwind CSS"
+            ],
+            "repo": "https://github.com/deadaf/evault"
+        },
+        "2": {
+            "title": "SystemXplorer",
+            "description": "A comprehensive system information summary tool developed as a part of the OS Lab project.",
+            "tech": [
+                "Python",
+                "Tkinter",
+                "Docker",
+                "Ubuntu (Linux)"
+            ],
+            "repo": "https://github.com/deadaf/SystemXplorer"
+        },
+        "3": {
+            "title": "PSQL-Backup Utility Tool",
+            "description": "An app to automate PostgreSQL database backups, with automated weekly execution through GitHub Actions & Cron",
+            "tech": [
+                "Python",
+                "PostgreSQL",
+                "Github Actions",
+                "Cron"
+            ],
+            "repo": "https://github.com/deadaf/psql-backup"
+        }
+    }
+}
