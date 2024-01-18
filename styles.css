@@ -1,80 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 body {
-  margin: auto;
-  max-width: 180ch;
-  padding: 1ch 2ch;
+	margin: auto;
+	max-width: 180ch;
+	padding: 1ch 2ch;
+	font-family: "Poppins", sans-serif;
+	font-size: small;
 }
 
-.top-hero{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20ch;
-  margin-bottom: 10ch;
-  margin-top: 10ch;
-
-}
-table{
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-style: dashed;
+#avatar {
+	border-radius: 50%;
+	width: 180px;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-table th, table td {
-  text-align: center;
-  padding: 8px;
-  border: 1px solid #ddd;
+#avatar:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	transform: scale(1.05);
 }
 
-.tables-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap:1px
+.tooltip {
+	position: relative;
+	display: inline-block;
+	font-size: 0.8rem;
 }
 
-.projects-card-container{
-  display: flex;
-  flex-direction: row;
-
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	border-radius: 6px;
+	border: solid 1px #ccc;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: -20%;
+	left: 80%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
 }
 
+.tooltip .tooltiptext::before {
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: 10%;
+	margin-left: -5px;
+	border-width: 7px;
+	border-style: solid;
+	border-color: transparent transparent #ccc transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.top-hero {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20ch;
+	margin-bottom: 10ch;
+	margin-top: 10ch;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-style: dashed;
+}
+
+table th,
+table td {
+	text-align: center;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+.tables-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1px;
+}
+
+.projects-card-container {
+	display: flex;
+	flex-direction: row;
+}
 
 .project-card {
-  border: 1px solid #ccc;
-  margin: 7px;
-  padding: 7px;
+	border: 1px solid #ccc;
+	margin: 7px;
+	padding: 7px;
 }
 
 .project-card div {
-  margin-bottom: 7px;
-
+	margin-bottom: 7px;
 }
 
-.project-card-title{
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
+.project-card-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
 }
 
-.project-card-description{
-  font-size: 1rem;
-  text-align: justify;
+.project-card-description {
+	font-size: 1rem;
+	text-align: justify;
 }
 
-.project-card-tech{
-  font-size: 1rem;
-  text-align: justify;
+.project-card-tech {
+	font-size: 1rem;
+	text-align: justify;
 }
 
-.project-card-link{
-  text-align: center;
-  border: solid 1px #ccc;
+.project-card-link {
+	text-align: center;
+	border: solid 1px #ccc;
 }
 
-.footer{
-  margin-top: 50px;
-  text-align: center;
+.footer {
+	margin-top: 50px;
+	text-align: center;
 }
