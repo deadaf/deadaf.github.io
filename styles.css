@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
 
 body {
 	margin: auto;
 	max-width: 180ch;
-	padding: 1ch 2ch;
 	font-family: "Poppins", sans-serif;
 	font-size: small;
 }
 
 #avatar {
+	cursor: pointer;
 	border-radius: 50%;
 	width: 180px;
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -36,8 +36,8 @@ body {
 	padding: 5px;
 	position: absolute;
 	z-index: 1;
-	bottom: -20%;
-	left: 80%;
+	bottom: -10%;
+	left: 50%;
 	margin-left: -60px;
 	opacity: 0;
 	transition: opacity 0.3s;
@@ -59,14 +59,40 @@ body {
 	opacity: 1;
 }
 
+#main-title {
+	font-size: 50px;
+	font-weight: 800;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#main-title:hover {
+	background-image: url("jjk.webp");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	transform: scale(1.05);
+	transition: transform 0.5s ease;
+}
+
+.name-container {
+	display: flex;
+	justify-content: center;
+	align-items: right;
+	flex-direction: column;
+	gap: 0.2ch;
+}
+
 .top-hero {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 20ch;
+	gap: 30ch;
 	margin-bottom: 10ch;
-	margin-top: 10ch;
+	margin-top: 5ch;
 }
 table {
 	border-collapse: collapse;
